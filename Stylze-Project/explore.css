@@ -159,10 +159,11 @@ a.btn-nav-circle, a.btn-style-info, a.nav-link {
 
 .dot:hover { 
     transform: scale(1.25); 
+    outline: 3px solid var(--accent-pink); 
 }
 
 .dot:focus {
-    outline: 5px solid var(--accent-pink); 
+    outline: 3px solid var(--accent-pink); 
     outline-offset: 5px; 
 }
 
@@ -196,7 +197,7 @@ a.btn-nav-circle, a.btn-style-info, a.nav-link {
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 0 5px rgba(0,0,0,0.2); 
-    margin-top: -8px; /* Agar rata tengah */
+    margin-top: -8px; 
 } 
 
 .btn-outline-dark-custom {
@@ -208,9 +209,10 @@ a.btn-nav-circle, a.btn-style-info, a.nav-link {
     transition: 0.3s;
 }
 
+
 .btn-outline-dark-custom:hover { 
     border-color: var(--accent-pink); 
-    color: white; 
+    color: rgb(254, 130, 130); 
 }
 
 .product-card {
