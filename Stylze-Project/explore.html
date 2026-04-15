@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylze - Explore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black px-4 py-3 sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="homepage.html">
+            <span class="logo-icon me-2"><i class="fas fa-pen"></i></span>
+            <span class="fw-bold tracking-widest">
+                <span class="text-white">STY</span><span class="text-accent">LYZE</span>
+            </span>
+        </a>
+
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav gap-4">
+                <li class="nav-item"><a href="homepage.html" class="btn-link-custom">Home</a></li>
+                <li class="nav-item"><a href="trending.html" class="btn-link-custom">Trending</a></li>
+                <li class="nav-item"><a href="explore.html" class="btn-link-custom active">Explore</a></li>
+                <li class="nav-item"><a href="#" class="btn-link-custom">Community</a></li>
+            </ul>
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search styles...">
+            </div>
+            <button class="btn text-white"><i class="fas fa-shopping-bag"></i></button>
+            <button class="btn text-white"><i class="fas fa-bell"></i></button>
+            <a href="#" class="btn-profile-wrapper">
+                <img src="../Gambar di website/Foto profil.jpg" class="rounded-circle profile-img" alt="profile">
+            </a>
+        </div>
+    </div>
+</nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-lg-2 sidebar-filter p-4">
+                <div class="filter-section mb-5">
+                    <h6 class="filter-title">STYLE PALETTE</h6>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" checked id="casual">
+                        <label class="form-check-label" for="casual">Casual Wear</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="street">
+                        <label class="form-check-label" for="street">Street Wear</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="minimalist">
+                        <label class="form-check-label" for="minimalist">Minimalist</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" checked id="fancy">
+                        <label class="form-check-label" for="fancy">Fancy / Formal</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" checked id="vintage">
+                        <label class="form-check-label" for="vintage">Vintage</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" checked id="y2k">
+                        <label class="form-check-label" for="y2k">Y2K Aesthetic</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" checked id="sporty">
+                        <label class="form-check-label" for="sporty">Sporty Tech</label>
+                    </div>
+                </div>
+
+                <div class="filter-section mb-5">
+                    <h6 class="filter-title">PRIMARY COLOR</h6>
+                    <div class="color-dots d-flex flex-wrap gap-2">
+                        <button class="dot" style="background-color: #ffffff;"></button>
+                        <button class="dot" style="background-color: #000000;"></button>
+                        <button class="dot" style="background-color: #DC2626;"></button>
+                        <button class="dot" style="background-color: #2563EB;"></button>
+                        <button class="dot" style="background-color: #059669;"></button>
+                        <button class="dot" style="background-color: #F59E0B;"></button>
+                        <div class="w-100"></div>
+                        <button class="dot" style="background-color: #9333EA;"></button>
+                        <button class="dot" style="background-color: #EC4899;"></button>
+                        <button class="dot" style="background-color: #78716C;"></button>
+                        <button class="dot" style="background-color: #C2410C;"></button>
+                        <button class="dot" style="background-color: #22D3EE;"></button>
+                        <button class="dot" style="background-color: #E92063;"></button>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h6 class="filter-title">BUDGET RANGE</h6>
+                    <input type="range" class="custom-range" min="0" max="1000" value="750">
+                    <div class="d-flex justify-content-between small text-secondary mt-2 mb-3">
+                        <span>$0</span>
+                        <span>$1.000+</span>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-6"><button class="btn btn-outline-dark-custom w-100">$0-$250</button></div>
+                        <div class="col-6"><button class="btn btn-outline-dark-custom w-100">$250-$500</button></div>
+                        <div class="col-6"><button class="btn btn-outline-dark-custom w-100">$500-$750</button></div>
+                        <div class="col-6"><button class="btn btn-outline-dark-custom w-100">$1.000+</button></div>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="col-lg-10 p-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 1.png" alt="Yellow Day">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                <span class="badge-trending">TRENDING</span>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Yellow Day</h6>
+                                    <span class="text-accent fw-bold">$ 50</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Casual Wear</span>
+                                    <span class="badge-tag">Avant Garde</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 2.png" alt="Minimalist">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Minimalist Echo</h6>
+                                    <span class="text-accent fw-bold">$ 200</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Fancy / Formal</span>
+                                    <span class="badge-tag">Minimalist</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 3.png" alt="New Horizon">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">New Horizon</h6>
+                                    <span class="text-accent fw-bold">$ 35</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Casual Wear</span>
+                                    <span class="badge-tag">Vintage</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 4.png" alt="Midnight Grunge">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Midnight Grunge</h6>
+                                    <span class="text-accent fw-bold">$ 400</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Fancy / Formal</span>
+                                    <span class="badge-tag">Edgy</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 5.png" alt="Urban Classic">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Urban Classic</h6>
+                                    <span class="text-accent fw-bold">$ 500</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Casual Wear</span>
+                                    <span class="badge-tag">Formal</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 6.png" alt="Velvet Soiree">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Velvet Soiree</h6>
+                                    <span class="text-accent fw-bold">$ 1000</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Fancy / Formal</span>
+                                    <span class="badge-tag">Luxury</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 7.png" alt="Street Vibe">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Street Vibe</h6>
+                                    <span class="text-accent fw-bold">$ 150</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Street Wear</span>
+                                    <span class="badge-tag">Minimalist</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 8.png" alt="Breeze Day">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Breeze Day</h6>
+                                    <span class="text-accent fw-bold">$ 99</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Minimalist</span>
+                                    <span class="badge-tag">Casual</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 1.png" alt="Yellow Day">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                <span class="badge-trending">TRENDING</span>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Yellow Day</h6>
+                                    <span class="text-accent fw-bold">$ 50</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Casual Wear</span>
+                                    <span class="badge-tag">Avant Garde</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 2.png" alt="Minimalist">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Minimalist Echo</h6>
+                                    <span class="text-accent fw-bold">$ 200</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Fancy / Formal</span>
+                                    <span class="badge-tag">Minimalist</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 3.png" alt="New Horizon">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">New Horizon</h6>
+                                    <span class="text-accent fw-bold">$ 35</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Casual Wear</span>
+                                    <span class="badge-tag">Vintage</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 4.png" alt="Midnight Grunge">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Midnight Grunge</h6>
+                                    <span class="text-accent fw-bold">$ 400</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Fancy / Formal</span>
+                                    <span class="badge-tag">Edgy</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 5.png" alt="Urban Classic">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Urban Classic</h6>
+                                    <span class="text-accent fw-bold">$ 500</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Casual Wear</span>
+                                    <span class="badge-tag">Formal</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 6.png" alt="Velvet Soiree">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Velvet Soiree</h6>
+                                    <span class="text-accent fw-bold">$ 1000</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Fancy / Formal</span>
+                                    <span class="badge-tag">Luxury</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 7.png" alt="Street Vibe">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Street Vibe</h6>
+                                    <span class="text-accent fw-bold">$ 150</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Street Wear</span>
+                                    <span class="badge-tag">Minimalist</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="../Gambar di website/Outfit 8.png" alt="Breeze Day">
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="product-info mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-white fw-bold mb-0">Breeze Day</h6>
+                                    <span class="text-accent fw-bold">$ 99</span>
+                                </div>
+                                <div class="tags mt-2">
+                                    <span class="badge-tag">Minimalist</span>
+                                    <span class="badge-tag">Casual</span>
+                                </div>
+                                <button class="btn btn-view-details mt-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="bg-black text-secondary py-3 px-4 d-flex justify-content-between align-items-center border-top border-dark">
+        <div class="d-flex gap-4">
+            <button class="btn btn-link-footer">ABOUT</button>
+            <button class="btn btn-link-footer">CONTACT</button>
+            <button class="btn btn-link-footer">TERMS</button>
+        </div>
+        <div class="d-flex gap-3">
+            <button class="btn text-secondary p-0"><i class="fas fa-globe"></i></button>
+            <button class="btn text-secondary p-0"><i class="fas fa-share-alt"></i></button>
+        </div>
+    </footer>
+
+</body>
+</html>

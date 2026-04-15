@@ -1,0 +1,243 @@
+:root {
+    --accent-pink: #ff2d75;
+    --dark-bg: #1a0b14; 
+    --light-gray: #b0b0b0;
+    --card-bg: #1a0b14; 
+    --stat-bg: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: rgba(34, 16, 24, 1);
+    color: #fff;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.navbar {
+    height: 80px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-icon { 
+    background-color: var(--accent-pink); 
+    padding: 5px 8px; 
+    border-radius: 5px; 
+}
+
+.text-accent { 
+    color: var(--accent-pink); 
+}
+
+.btn-link-custom {
+    color: var(--light-gray) !important;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0; 
+    margin: 0 15px; 
+    text-decoration: none !important;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-link-custom:hover {
+    color: #ffffff !important;
+}
+
+.btn-link-custom.active { 
+    color: var(--accent-pink) !important; 
+}
+
+.btn-link-custom.active::after {
+    content: ''; 
+    position: absolute;
+    bottom: -6px; 
+    left: 0; 
+    width: 100%; 
+    height: 3px; 
+    background-color: var(--accent-pink);
+    border-radius: 3px;
+}
+
+.search-box {
+    background: #111; 
+    border-radius: 20px; 
+    padding: 0 15px; 
+    display: flex; align-items: center; 
+    height: 42px; 
+    width: 400px; 
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.search-box input { 
+    background: transparent; 
+    border: none; 
+    color: white; 
+    outline: none; 
+    font-size: 0.9rem; 
+    margin-left: 10px; 
+    width: 100%; 
+}
+
+.search-box i { 
+    color: #888; 
+    font-size: 0.9rem; 
+}
+
+.profile-img { 
+    width: 35px; 
+    height: 35px; 
+    object-fit: cover; 
+    border: 2px solid white; 
+}
+
+.btn-profile-wrapper { 
+    display: inline-block; 
+    text-decoration: none; 
+    transition: transform 0.2s; 
+}
+
+.btn-profile-wrapper:hover { 
+    transform: scale(1.1); 
+}
+
+.btn-profile-wrapper:hover .profile-img { 
+    border-color: var(--accent-pink); 
+    box-shadow: 0 0 10px rgba(255, 45, 117, 0.3); 
+}
+
+a.btn-nav-circle, a.btn-style-info, a.nav-link { 
+    text-decoration: none !important; 
+}
+
+.btn-link-footer { 
+    color: var(--light-gray); 
+    font-size: 0.75rem; 
+    background: none; 
+    border: none; 
+    padding: 0; 
+    transition: 0.3s; 
+}
+
+.btn-link-footer:hover { 
+    color: white; 
+}
+
+.full-height {
+    min-height: calc(100vh - 120px);
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)), 
+                url('../Gambar\ di\ website/Hero Image.png'); 
+    background-size: cover; 
+    background-position: center 10%; 
+    background-repeat: no-repeat;
+}
+
+.text-bg-accent { 
+    background-color: var(--accent-pink) !important; 
+}
+
+.btn-accent { 
+    background-color: var(--accent-pink); 
+    color: white; 
+    border-radius: 8px; 
+    font-weight: 500; 
+}
+
+.btn-dark-custom { 
+    background-color: #333; 
+    color: white; 
+    border-radius: 8px; 
+}
+
+.combo-section .row { 
+    margin-left: -15px; 
+    margin-right: -15px; 
+}
+
+.combo-section .col-6 { 
+    padding-left: 15px; 
+    padding-right: 15px; 
+    margin-bottom: 30px; 
+}
+
+.btn-nav-circle {
+    background: #2a1a24; 
+    color: white; 
+    border-radius: 50%;
+    width: 35px; 
+    height: 35px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 0.8rem;
+}
+
+.btn-filter {
+    background: none; 
+    border: none; color: 
+    var(--light-gray); 
+    font-size: 0.9rem;
+    padding-bottom: 12px; 
+    position: relative; 
+    transition: 0.3s;
+}
+
+.btn-filter.active { 
+    color: var(--accent-pink); 
+}
+
+.btn-filter.active::after {
+    content: ''; 
+    position: absolute; 
+    bottom: -1px; 
+    left: 0; 
+    width: 100%; 
+    height: 3px; 
+    background-color: var(--accent-pink);
+}
+
+.card-img-wrapper {
+    border-radius: 20px; 
+    overflow: hidden; 
+    height: 400px; 
+    display: flex; 
+    background-color: transparent !important; 
+    margin-bottom: 20px; 
+}
+
+.card-img-wrapper img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: inherit; 
+}
+
+.btn-style-info { 
+    background: none; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+    text-align: left; 
+    display: block; 
+    width: 100%; 
+    transition: opacity 0.2s ease; 
+}
+
+.btn-style-info:active { 
+    transform: scale(0.98); 
+    opacity: 0.8; 
+}
+
+.btn-style-info h6 { 
+    transition: 0.3s; 
+}
+.btn-style-info:hover h6 { 
+    color: var(--accent-pink) !important; 
+}
+
+.x-small { 
+    font-size: 0.75rem; 
+}

@@ -1,0 +1,227 @@
+:root {
+    --accent-pink: #ff2d75;
+    --dark-bg: #1a0b14; 
+    --light-gray: #b0b0b0;
+    --card-bg: #1a0b14; 
+    --stat-bg: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: rgba(34, 16, 24, 1);
+    color: #fff;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.navbar {
+    height: 80px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-icon { 
+    background-color: var(--accent-pink); 
+    padding: 5px 8px; 
+    border-radius: 5px; 
+}
+
+.text-accent { 
+    color: var(--accent-pink); 
+}
+
+.btn-link-custom {
+    color: var(--light-gray) !important;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0; 
+    margin: 0 15px; 
+    text-decoration: none !important;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-link-custom:hover {
+    color: #ffffff !important;
+}
+
+.btn-link-custom.active { 
+    color: var(--accent-pink) !important; 
+}
+
+
+.btn-link-custom.active::after {
+    content: ''; 
+    position: absolute;
+    bottom: -6px; 
+    left: 0; 
+    width: 100%; 
+    height: 3px; 
+    background-color: var(--accent-pink);
+    border-radius: 3px;
+}
+
+.search-box {
+    background: #111; 
+    border-radius: 20px; 
+    padding: 0 15px; 
+    display: flex; align-items: center; 
+    height: 42px; 
+    width: 400px; 
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.search-box input { 
+    background: transparent; 
+    border: none; 
+    color: white; 
+    outline: none; 
+    font-size: 0.9rem; 
+    margin-left: 10px; 
+    width: 100%; 
+}
+
+.search-box i { 
+    color: #888; 
+    font-size: 0.9rem; 
+}
+
+.profile-img { 
+    width: 35px; 
+    height: 35px; 
+    object-fit: cover; 
+    border: 2px solid white; 
+}
+
+.btn-profile-wrapper { 
+    display: inline-block; 
+    text-decoration: none; 
+    transition: transform 0.2s; 
+}
+
+.btn-profile-wrapper:hover { 
+    transform: scale(1.1); 
+}
+
+.btn-profile-wrapper:hover .profile-img { 
+    border-color: var(--accent-pink); 
+    box-shadow: 0 0 10px rgba(255, 45, 117, 0.3); 
+}
+
+a.btn-nav-circle, a.btn-style-info, a.nav-link { 
+    text-decoration: none !important; 
+}
+
+.btn-link-footer { 
+    color: var(--light-gray); 
+    font-size: 0.75rem; 
+    background: none; 
+    border: none; 
+    padding: 0; 
+    transition: 0.3s; 
+}
+
+.btn-link-footer:hover { 
+    color: white; 
+}
+
+.badge-weekly {
+    background-color: #430c26; 
+    color: var(--accent-pink); 
+    font-size: 0.7rem; 
+    padding: 5px 10px;
+}
+
+.trending-card {
+    background-color: var(--card-bg); 
+    border-radius: 20px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+}
+
+.card-img-container { 
+    height: 100%; 
+    min-height: 400px; 
+}
+
+.card-img-container img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.rank-tag { 
+    color: var(--accent-pink); 
+    font-weight: 700; 
+    font-size: 0.85rem; 
+    letter-spacing: 1px; 
+}
+
+.stat-box { 
+    background-color: var(--stat-bg); 
+    padding: 15px 20px; 
+    border-radius: 12px; 
+    flex: 1; 
+}
+
+.stat-label { 
+    color: #665; 
+    font-size: 0.7rem; 
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.stat-value { 
+    font-size: 1.2rem; 
+    font-weight: 700; 
+}
+
+.stat-up { 
+    color: #00ff88; 
+    font-size: 0.8rem; 
+    margin-left: 5px; 
+}
+
+.stat-down { 
+    color: #ff4d4d; 
+    font-size: 0.8rem; 
+    margin-left: 5px; 
+}
+
+.btn-save-look {
+    background-color: var(--accent-pink); 
+    color: white;
+    border-radius: 10px; 
+    padding: 12px; 
+    font-weight: 600; 
+    transition: 0.3s;
+}
+
+.btn-save-look:hover { 
+    background-color: #e02563; 
+    color: white; 
+}
+
+.btn-icon-action {
+    background-color: #2a1a24; 
+    color: var(--accent-pink); 
+    border-radius: 10px; 
+    width: 48px; 
+    height: 48px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: none;
+}
+
+.btn-style-info { 
+    display: inline-block; 
+    transition: 0.3s; 
+}
+
+.btn-style-info h2 { 
+    transition: 0.3s; 
+}
+
+.btn-style-info:hover h2 { 
+    color: var(--accent-pink) !important; 
+}

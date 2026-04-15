@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylze - Trending Feed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="trending.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black px-4 py-3 sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="homepage.html">
+            <span class="logo-icon me-2"><i class="fas fa-pen"></i></span>
+            <span class="fw-bold tracking-widest">
+                <span class="text-white">STY</span><span class="text-accent">LYZE</span>
+            </span>
+        </a>
+
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav gap-4">
+                <li class="nav-item"><a href="homepage.html" class="btn-link-custom">Home</a></li>
+                <li class="nav-item"><a href="trending.html" class="btn-link-custom active">Trending</a></li>
+                <li class="nav-item"><a href="explore.html" class="btn-link-custom">Explore</a></li>
+                <li class="nav-item"><a href="#" class="btn-link-custom">Community</a></li>
+            </ul>
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search styles...">
+            </div>
+            <button class="btn text-white"><i class="fas fa-shopping-bag"></i></button>
+            <button class="btn text-white"><i class="fas fa-bell"></i></button>
+            <a href="#" class="btn-profile-wrapper">
+                <img src="../Gambar di website/Foto profil.jpg" class="rounded-circle profile-img" alt="profile">
+            </a>
+        </div>
+    </div>
+</nav>
+
+    <main class="container py-5">
+        <header class="mb-5">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge badge-weekly">WEEKLY UPDATE</span>
+                <span class="text-secondary small">• Updated 2 hours ago</span>
+            </div>
+            <h1 class="display-4 fw-bold text-white mb-3">Trending Weekly Feed</h1>
+            <p class="text-secondary fs-5">Discover the looks, aesthetics, and pieces dominating the scene this week.</p>
+        </header>
+
+        <div class="trending-list d-flex flex-column gap-5">
+            
+            <div class="trending-card">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <div class="card-img-container">
+                            <img src="../Gambar di website/Rank 1.png" alt="Quiet Luxury">
+                        </div>
+                    </div>
+                    <div class="col-md-7 p-5 d-flex flex-column justify-content-center">
+                        <span class="rank-tag mb-2">RANK #1</span>
+                        <div class="mb-3">
+                                <a href="#" class="btn-style-info">
+                                    <h2 class="card-title text-white fw-bold mb-0">Quiet Luxury</h2>
+                                </a>
+                                <a href="#" class="d-flex align-items-center gap-2 text-accent mt-2 text-decoration-none">
+                                    <i class="fas fa-chart-line"></i> <span class="fw-medium">Style Breakdown</span>
+                                </a>
+                            </div>
+                        <p class="text-secondary mb-4">Minimalist silhouettes and high-quality natural fibers. This trend emphasizes stealth wealth through perfect tailoring and a palette of creams, beiges, and charcoals.</p>
+                        
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="stat-box">
+                                <span class="stat-label">TOTAL SAVES</span>
+                                <div class="stat-value">9,120 <span class="stat-up">+5%</span></div>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">INTERACTIONS</span>
+                                <div class="stat-value">10.2k <span class="stat-down">-2%</span></div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-save-look flex-grow-1"><i class="far fa-heart me-2"></i> Save Look</button>
+                            <button class="btn btn-icon-action"><i class="fas fa-share-alt"></i></button>
+                            <button class="btn btn-icon-action"><i class="far fa-comment-dots"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-card">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <div class="card-img-container">
+                            <img src="../Gambar di website/Rank 2.png" alt="Cyberpunk Street">
+                        </div>
+                    </div>
+                    <div class="col-md-7 p-5 d-flex flex-column justify-content-center">
+                        <span class="rank-tag mb-2">RANK #2</span>
+                        <div class="mb-3">
+                                <a href="#" class="btn-style-info">
+                                    <h2 class="card-title text-white fw-bold mb-0">Cyberpunk Street</h2>
+                                </a>
+                                <a href="#" class="d-flex align-items-center gap-2 text-accent mt-2 text-decoration-none">
+                                    <i class="fas fa-chart-line"></i> <span class="fw-medium">Style Breakdown</span>
+                                </a>
+                            </div>
+                        <p class="text-secondary mb-4">Neon accents meet utilitarian techwear. This week's top trend focuses on the intersection of function and future-goth aesthetics.</p>
+                        
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="stat-box">
+                                <span class="stat-label">TOTAL SAVES</span>
+                                <div class="stat-value">5,402 <span class="stat-up">+15%</span></div>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">INTERACTIONS</span>
+                                <div class="stat-value">4.2k <span class="stat-up">+8.2%</span></div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-save-look flex-grow-1"><i class="far fa-heart me-2"></i> Save Look</button>
+                            <button class="btn btn-icon-action"><i class="fas fa-share-alt"></i></button>
+                            <button class="btn btn-icon-action"><i class="far fa-comment-dots"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-card">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <div class="card-img-container">
+                            <img src="../Gambar di website/Rank 3.png" alt="Earthbound Minimalism">
+                        </div>
+                    </div>
+                    <div class="col-md-7 p-5 d-flex flex-column justify-content-center">
+                        <span class="rank-tag mb-2">RANK #3</span>
+                        <div class="mb-3">
+                            <a href="#" class="btn-style-info">
+                                <h2 class="card-title text-white fw-bold mb-0">Earthbound Minimalism</h2>
+                            </a>
+                            <a href="#" class="d-flex align-items-center gap-2 text-accent mt-2 text-decoration-none">
+                                <i class="fas fa-chart-line"></i> <span class="fw-medium">Style Breakdown</span>
+                            </a>
+                        </div>
+                        <p class="text-secondary mb-4">Reconnecting with nature through organic textures, raw linens, and soft forest greens. This aesthetic prioritizes sustainability and comfort without sacrificing elegance.</p>
+                        
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="stat-box">
+                                <span class="stat-label">TOTAL SAVES</span>
+                                <div class="stat-value">5,230 <span class="stat-up">+12%</span></div>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">INTERACTIONS</span>
+                                <div class="stat-value">3.9k <span class="stat-up">+3%</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-save-look flex-grow-1"><i class="far fa-heart me-2"></i> Save Look</button>
+                            <button class="btn btn-icon-action"><i class="fas fa-share-alt"></i></button>
+                            <button class="btn btn-icon-action"><i class="far fa-comment-dots"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-card">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <div class="card-img-container">
+                            <img src="../Gambar di website/Rank 4.png" alt="Y2K Revival">
+                        </div>
+                    </div>
+                    <div class="col-md-7 p-5 d-flex flex-column justify-content-center">
+                        <span class="rank-tag mb-2">RANK #4</span>
+                        <div class="mb-3">
+                            <a href="#" class="btn-style-info">
+                                <h2 class="card-title text-white fw-bold mb-0">Y2K Revival</h2>
+                            </a>
+                            <a href="#" class="d-flex align-items-center gap-2 text-accent mt-2 text-decoration-none">
+                                <i class="fas fa-chart-line"></i> <span class="fw-medium">Style Breakdown</span>
+                            </a>
+                        </div>
+                        <p class="text-secondary mb-4">Nostalgia hits hard with bubblegum pinks, icy blues, and chrome textures. This revival trend is driven by playful energy and statement accessories likerimless glasses and baguette bags.</p>
+                        
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="stat-box">
+                                <span class="stat-label">TOTAL SAVES</span>
+                                <div class="stat-value">5,230 <span class="stat-up">+12%</span></div>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">INTERACTIONS</span>
+                                <div class="stat-value">3.9k <span class="stat-up">+3%</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-save-look flex-grow-1"><i class="far fa-heart me-2"></i> Save Look</button>
+                            <button class="btn btn-icon-action"><i class="fas fa-share-alt"></i></button>
+                            <button class="btn btn-icon-action"><i class="far fa-comment-dots"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-card">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <div class="card-img-container">
+                            <img src="../Gambar di website/Rank 5.png" alt="Neo-Gothic Romance">
+                        </div>
+                    </div>
+                    <div class="col-md-7 p-5 d-flex flex-column justify-content-center">
+                        <span class="rank-tag mb-2">RANK #5</span>
+                        <div class="mb-3">
+                            <a href="#" class="btn-style-info">
+                                <h2 class="card-title text-white fw-bold mb-0">Neo-Gothic Romance</h2>
+                            </a>
+                            <a href="#" class="d-flex align-items-center gap-2 text-accent mt-2 text-decoration-none">
+                                <i class="fas fa-chart-line"></i> <span class="fw-medium">Style Breakdown</span>
+                            </a>
+                        </div>
+                        <p class="text-secondary mb-4">A contemporary twist on dark elegance, focusing on intricate textures and Victorian-inspired details. Key elements include delicate lace layers, structured corsetry, and heavy silver hardware.</p>
+                        
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="stat-box">
+                                <span class="stat-label">TOTAL SAVES</span>
+                                <div class="stat-value">5,230 <span class="stat-up">+12%</span></div>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">INTERACTIONS</span>
+                                <div class="stat-value">3.9k <span class="stat-up">+3%</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-save-look flex-grow-1"><i class="far fa-heart me-2"></i> Save Look</button>
+                            <button class="btn btn-icon-action"><i class="fas fa-share-alt"></i></button>
+                            <button class="btn btn-icon-action"><i class="far fa-comment-dots"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </main>
+
+    <footer class="bg-black text-secondary py-3 px-4 d-flex justify-content-between align-items-center border-top border-dark">
+        <div class="d-flex gap-4">
+            <button class="btn btn-link-footer">ABOUT</button>
+            <button class="btn btn-link-footer">CONTACT</button>
+            <button class="btn btn-link-footer">TERMS</button>
+        </div>
+        <div class="d-flex gap-3">
+            <button class="btn text-secondary p-0"><i class="fas fa-globe"></i></button>
+            <button class="btn text-secondary p-0"><i class="fas fa-share-alt"></i></button>
+        </div>
+    </footer>
+
+</body>
+</html>
